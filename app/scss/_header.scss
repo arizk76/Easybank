@@ -27,24 +27,13 @@
     bottom: 0px;
     left: 0px;
     background-image: linear-gradient($darkBlue, transparent);
-    @include breakpoint-up(large) {
-      display: none;
-    }
   }
 
   nav {
     position: relative;
-    width: 100%;
     background-color: $white;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
-    padding-left: 1.8571rem;
-    padding-right: 1.8571rem;
-
-    @include breakpoint-up(large) {
-      padding-left: 10.8571rem;
-      padding-right: 10.8571rem;
-    }
   }
 
   &__logo {
@@ -57,7 +46,7 @@
   &__toggle {
     // Mobile Menu Toggle
 
-    > span {
+    span {
       display: block;
       width: 26px;
       height: 2px;
@@ -73,7 +62,6 @@
 
   &__menu {
     position: absolute;
-    height: 18rem;
     width: calc(100% - 3rem);
     left: 50%;
     transform: translateX(-50%);
@@ -84,16 +72,9 @@
 
     a {
       display: block;
-      line-height: 1.9rem;
       padding: 0.625rem;
       color: $darkBlue;
-      font-size: large;
       text-align: center;
-
-      &:hover {
-        //color: black;
-        font-weight: bold;
-      }
     }
   }
 
@@ -128,9 +109,5 @@
         }
       }
     }
-  }
-
-  &__cta {
-    font-size: $font-sm;
   }
 }
